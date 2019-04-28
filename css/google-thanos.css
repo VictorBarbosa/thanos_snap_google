@@ -1,0 +1,106 @@
+body {
+  overflow: hidden;
+}
+.thanos {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  align-items: center;
+}
+#__bs_notify__ {
+  opacity: 0.5;
+  height: 20px;
+  width: 120px;
+}
+canvas {
+  height: 80px;
+  width: 80px;
+}
+video {
+  visibility: hidden;
+}
+/*
+**
+*/
+
+
+ 
+
+ 
+.block {
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.block {
+  width: 440px;
+  height: 200px;
+  border-color: #cfd8dc;
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 12px;
+  line-height: 40px;
+}
+
+.div-hidden {
+  transition: opacity 1.75s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.div-show {
+  transition: opacity 1.5s ease 0s;
+  opacity: 1;
+  visibility: visible;
+ 
+}
+
+.block-container {
+  position: relative;
+  margin: 8px 0;
+  display: flex;
+}
+
+.div-overlay {
+  position: absolute;
+  top: 0;
+  animation-iteration-count: 1;
+  animation-duration: 1.5s;
+  visibility: hidden;
+ 
+}
+
+.div-overlay-left {
+  animation-name: slide-left;
+
+}
+
+.div-overlay-right {
+  animation-name: slide-right;
+}
+
+@keyframes slide-left {
+  from {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    left: -30px;
+    opacity: 0;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    left: 30px;
+    opacity: 0;
+  }
+}

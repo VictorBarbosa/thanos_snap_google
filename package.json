@@ -1,0 +1,15 @@
+{
+  "name": "google-thanos-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"lite-server\" \"tsc -w\""
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "lite-server": "^2.4.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

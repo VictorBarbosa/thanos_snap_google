@@ -1,2 +1,2 @@
 # ---------------------------------
-![Screenshot](doc/snap.gif)
+![Screenshot](Doc/snap.gif)
